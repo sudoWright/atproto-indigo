@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block head_title %}Error {{ statusCode }} - Bluesky{% endblock %}
+
+{% block main_content %}
+<center>
+  <div style="font-size: 8em;">{{ statusCode }}</div>
+  <div style="font-size: 3em;">Error!</div>
+  <p>Sorry about that! Our <a href="https://bluesky.statuspage.io/">Status Page</a> might have more context.
+</center>
+{% endblock %}
