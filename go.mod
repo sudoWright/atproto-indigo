@@ -5,6 +5,7 @@ go 1.20
 require (
 	contrib.go.opencensus.io/exporter/prometheus v0.4.2
 	github.com/brianvoe/gofakeit/v6 v6.20.2
+	github.com/flosch/pongo2/v6 v6.0.0
 	github.com/golang-jwt/jwt v3.2.2+incompatible
 	github.com/gorilla/websocket v1.5.0
 	github.com/hashicorp/go-retryablehttp v0.7.2
