@@ -12,6 +12,9 @@ import (
 	"github.com/labstack/echo/v4"
 )
 
+//go:embed templates/*
+var TemplateFS embed.FS
+
 type RendererLoader struct {
 	prefix string
 	fs     *embed.FS

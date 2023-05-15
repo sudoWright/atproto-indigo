@@ -7,6 +7,7 @@ import (
 	"net/http"
 	"os"
 	"strings"
+	"embed"
 
 	comatproto "github.com/bluesky-social/indigo/api/atproto"
 	appbsky "github.com/bluesky-social/indigo/api/bsky"
@@ -18,6 +19,9 @@ import (
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/urfave/cli/v2"
 )
+
+//go:embed static/*
+var StaticFS embed.FS
 
 type Server struct {
 	xrpcc *xrpc.Client
