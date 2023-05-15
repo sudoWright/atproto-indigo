@@ -3,9 +3,10 @@
 {% block head_title %}Error {{ statusCode }} - Bluesky{% endblock %}
 
 {% block main_content %}
+<br>
 <center>
-  <div style="font-size: 8em;">{{ statusCode }}</div>
-  <div style="font-size: 3em;">Error!</div>
+  <h1 style="font-size: 8em;">{{ statusCode }}</h1>
+  <h2 style="font-size: 3em;">Error!</h2>
   <p>Sorry about that! Our <a href="https://bluesky.statuspage.io/">Status Page</a> might have more context.
 </center>
 {% endblock %}

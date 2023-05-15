@@ -35,8 +35,20 @@
 <body>
 {%- block body_all %}
 <main class="ui main container" style="min-height: calc(100vh);">
-  <div class="ui container text" style="margin-top: 2em;">
+  <div class="ui grid">
+  <div class="fixed four wide column">
+    <div class="ui vertical text menu" style="padding-top: 2em; font-size: 1.3rem;">
+      <h2 style="color: blue;">Bluesky</h2>
+      <a href="/feed/whatshot" class="item">What's Hot</a>
+      <a href="/feed/hellthread" class="item">Hell Thread</a>
+      <a href="/profile/bnewbold.bsky.team" class="item">Prod bnewbold</a>
+      <a href="/profile/bnewbold.staging.bsky.dev" class="item">Staging bnewbold</a>
+      <a href="/profile/paul.staging.bsky.dev" class="item">Staging paul</a>
+    </div>
+  </div>
+  <div class="ten wide column">
     {% block main_content %}blank page{% endblock %}
+  </div>
   </div>
 </main>
 {% endblock -%}
